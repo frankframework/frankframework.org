@@ -1,0 +1,20 @@
+.btn {
+    display: inline-block;
+    background-color: $bg-color-dark;
+    padding: 0.8em 2.5em;
+    color: $bg-color !important;
+    text-transform: lowercase;
+    border-radius: 999px;
+    text-decoration: none !important;
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 1;
+    
+    transition: transform 200ms ease-in-out;
+    will-change: transform;
+    transform: scale(1);
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

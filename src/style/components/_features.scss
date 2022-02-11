@@ -1,0 +1,35 @@
+.features {
+
+    h2 {
+        font-size: 1em;
+    }
+    .icon {
+        max-height: 6em;
+        margin-bottom: 0.5em;
+        justify-self: center;
+
+        &--smaller {
+           transform-origin: bottom left;
+           transform: scale(0.9);
+        }
+
+        &--rotated {
+            transform: rotate(45deg);
+        }
+    }
+
+    @media(max-width: 700px) {
+        .col {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 20px;
+
+            .icon {
+                max-width: 80%;
+            }
+        }
+        .row.mb-3 {
+            margin-bottom: 15px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.links {
+    .card {
+        padding-right: 100px;
+        flex-grow: 1;
+        background-image: url('~/src/assets/images/icon-arrow.svg');
+        background-size: 2em;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 30px) 50%;
+        color: $primary-text-color !important;
+
+        will-change: transform;
+        transition: transform 200ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .row {
+        margin-bottom: 15px;
+        align-items: stretch;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

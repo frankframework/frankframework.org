@@ -1,0 +1,31 @@
+.hero {
+    background-color: $primary-color;
+
+    h1 {
+        font-weight: normal;
+        font-size: 1em;
+    }
+
+    .logo {
+        max-width: 250px;
+    }
+
+    &__github {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        .gh-icon {
+            height: 1em;
+            margin-right: 0.4em;
+            transition: fill 200ms;
+        }
+
+        &:hover {
+            .gh-icon {
+                fill: $link-hover-color;
+            }
+        }
+    }
+}

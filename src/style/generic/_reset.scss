@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: $primary-text-color;
+    background-color: $bg-color-tint;
+}
+
+html {
+    font-size: 24px;
+    font-family: $primary-font;
+
+    @media(max-width: 700px) {
+        font-size: 16px;
+    }
+
+
+}
+
+::-moz-selection { background: black; }
+::selection { color: black;
+    background: #878787; }
+

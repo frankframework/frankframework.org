@@ -1,0 +1,9 @@
+.section {
+    &--primary {
+       background-color: $primary-color; 
+    }
+    &--dark {
+        background-color: $bg-color-dark;
+        color: $bg-color;
+    }
+}
