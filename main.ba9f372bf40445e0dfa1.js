@@ -1,0 +1,1 @@
+(()=>{"use strict";fetch("https://ibissource.org/iaf/releases/").then((e=>e.json())).then((e=>{document.getElementById("gh-url").href=e[0].html_url,document.getElementById("gh-version").innerText=e[0].name})).catch((e=>{console.error("Error getting GitHub data:",e)}))})();
