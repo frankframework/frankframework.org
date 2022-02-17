@@ -3,9 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const BASE_PATH = "/";
-
-module.exports = (env, argv) => {
+module.exports = () => {
     return {
         devServer: {
             static: {
@@ -19,7 +17,6 @@ module.exports = (env, argv) => {
         output: {
             filename: 'main.[contenthash].js',
             path: path.resolve(__dirname, 'dist'),
-            
             clean: true
         },
         plugins: [
@@ -32,7 +29,6 @@ module.exports = (env, argv) => {
                 filename: 'index.html',
                 template: './src/index.html',
                 inject: 'body',
-                // base: argv.mode === 'production' ? BASE_PATH : '/',
             }),
             new MiniCssExtractPlugin({
                 filename: "[name].[contenthash].css",
