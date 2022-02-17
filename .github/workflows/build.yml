@@ -10,11 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: Installing packages
-        run: npm install
+      - name: Installing project dependencies
+        run: yarn install
 
-      - name: Build Gridsome site
-        run: yarn build
+      - name: Build site
+        run: webpack build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.2.5
