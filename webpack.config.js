@@ -32,7 +32,7 @@ module.exports = (env, argv) => {
                 filename: 'index.html',
                 template: './src/index.html',
                 inject: 'body',
-                base: argv.mode === 'production' ? BASE_PATH : '/',
+                // base: argv.mode === 'production' ? BASE_PATH : '/',
             }),
             new MiniCssExtractPlugin({
                 filename: "[name].[contenthash].css",
