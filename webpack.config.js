@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const TARGET_URL = "https://nielslam.github.io/frankframework.org";
+const TARGET_URL = "/frankframework.org/";
 
 module.exports = (env, argv) => {
     return {
