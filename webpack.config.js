@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const BASE_PATH = "/frankframework.org/";
+const BASE_PATH = "/";
 
 module.exports = (env, argv) => {
     return {
