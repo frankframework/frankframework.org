@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const TARGET_URL = "/frankframework.org/";
+const BASE_PATH = "/frankframework.org/";
 
 module.exports = (env, argv) => {
     return {
@@ -32,7 +32,7 @@ module.exports = (env, argv) => {
                 filename: 'index.html',
                 template: './src/index.html',
                 inject: 'body',
-                base: argv.mode === 'production' ? TARGET_URL : '/',
+                base: argv.mode === 'production' ? BASE_PATH : '/',
             }),
             new MiniCssExtractPlugin({
                 filename: "[name].[contenthash].css",
