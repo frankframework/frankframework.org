@@ -17,11 +17,24 @@
         align-items: center;
         right: 0;
         top: 0;
-        transform: translate(30%, -30%);
+        transform: translate(30%, -30%) rotate(12deg);
         color: $bg-color;
         font-weight: bold;
         height: 4em;
         width: 4em;
         background-image: url("~/src/assets/images/sticker.svg");
+        user-select: none;
+        &:hover {
+            animation: beat-sticker 1s infinite alternate ease-in-out;
+        }
+    }
+}
+
+@keyframes beat-sticker {
+    0% {
+        transform: translate(30%, -30%) rotate(12deg) scale(1);
+    }
+    100%{
+        transform: translate(30%, -30%) rotate(12deg) scale(1.3);
     }
 }
