@@ -1,0 +1,41 @@
+.companies{
+
+    h2 {
+        font-size: 1em;
+        color:#E1E1E1;
+    }
+    
+    .icon {
+        background-color: #F8F8F8;
+        border-radius: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        filter: grayscale(100%);
+        transition: all 200ms;
+
+        img{
+            display: block;
+            margin: auto;
+            width: 5em;
+        }
+
+        p{
+            font-weight: normal;
+            font-size: 1em;
+            text-align: center;
+        }
+
+        &:hover{
+            width: 300px;  
+            filter: grayscale(0%);
+        }
+
+    }
+
+    
+
+   
+
+}
