@@ -4,33 +4,37 @@
         font-size: 1em;
         color:#E1E1E1;
     }
-    
+
+
     .icon {
         background-color: #F8F8F8;
         border-radius: 1em;
-        display: flex;
+        display:flex ;
         justify-content: center;
-        align-items: center;
+        align-items:center;
         flex-direction: column;
         filter: grayscale(100%);
+        width: 100%;
         transition: all 200ms;
+        aspect-ratio: 1 / 1;
 
         img {
             display: block;
-            margin: auto;
+            margin-bottom: 0.5em;
             width: 5em;
         }
 
-        p {
-            font-weight: normal;
-            font-size: 1em;
-            text-align: center;
-        }
+       h2{
+        color: gold;
+        filter: grayscale(20%);
+        font-size: 90%;
+        margin-left: auto;
+        margin-right: auto;
+       }
 
         &:hover {
             width: 300px;  
             filter: grayscale(0%);
         }
-
     }
 }
