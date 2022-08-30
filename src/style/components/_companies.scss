@@ -15,27 +15,22 @@
         filter: grayscale(100%);
         transition: all 200ms;
 
-        img{
+        img {
             display: block;
             margin: auto;
             width: 5em;
         }
 
-        p{
+        p {
             font-weight: normal;
             font-size: 1em;
             text-align: center;
         }
 
-        &:hover{
+        &:hover {
             width: 300px;  
             filter: grayscale(0%);
         }
 
     }
-
-    
-
-   
-
 }
