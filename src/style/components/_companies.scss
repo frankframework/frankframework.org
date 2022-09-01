@@ -21,7 +21,8 @@
         img {
             display: block;
             margin-bottom: 0.5em;
-            width: 5em;
+           padding-left: 50px;
+           padding-right: 50px;
         }
 
        h2{
@@ -32,8 +33,7 @@
         margin-right: auto;
        }
 
-        &:hover {
-            width: 300px;  
+        &:hover { 
             filter: grayscale(0%);
         }
     }
