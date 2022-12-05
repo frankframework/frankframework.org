@@ -5,18 +5,24 @@
         color: #E1E1E1;
     }
 
-
     .icon {
         background-color: #F8F8F8;
         border-radius: 1em;
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-direction: column;
         filter: grayscale(100%);
         width: 100%;
         transition: all 200ms;
         aspect-ratio: 1 / 1;
+
+        &--plus {
+            img {
+                position: relative;
+                max-height: 40%;
+                margin-top: 1em;
+            }
+        }
 
         img {
             display: block;
@@ -24,17 +30,15 @@
             padding-right: 50px;
         }
 
-        h2 {
-            color: $primary-color;
-            font-size: 0.9rem;
+        span {
+            font-weight: bold;
+            color: #fdc300;
+            filter: grayscale(20%);
+            text-align: center;
         }
 
         &:hover {
             filter: grayscale(0%);
-        }
-
-        .plus-icon {
-            max-width: 200px;
         }
     }
 }
