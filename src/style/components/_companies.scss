@@ -1,15 +1,14 @@
-.companies{
+.companies {
 
     h2 {
         font-size: 1em;
-        color:#E1E1E1;
+        color: #E1E1E1;
     }
-
 
     .icon {
         background-color: #F8F8F8;
         border-radius: 1em;
-        display:flex ;
+        display: flex;
         justify-content: center;
         flex-direction: column;
         filter: grayscale(100%);
@@ -17,21 +16,28 @@
         transition: all 200ms;
         aspect-ratio: 1 / 1;
 
-        img {
-            display: block;
-           padding-left: 50px;
-           padding-right: 50px;
+        &--plus {
+            img {
+                position: relative;
+                max-height: 40%;
+                margin-top: 1em;
+            }
         }
 
-       h2{
-        color: gold;
-        filter: grayscale(20%);
-        font-size: 90%;
-        margin-left: auto;
-        margin-right: auto;
-       }
+        img {
+            display: block;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
 
-        &:hover { 
+        span {
+            font-weight: bold;
+            color: #fdc300;
+            filter: grayscale(20%);
+            text-align: center;
+        }
+
+        &:hover {
             filter: grayscale(0%);
         }
     }
