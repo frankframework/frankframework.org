@@ -1,6 +1,6 @@
 {
-    "name": "FrankFramework.org",
-    "short_name": "FrankFramework.org",
+    "name": "frankframework.org",
+    "short_name": "frankframework.org",
     "icons": [
         {
             "src": "/assets/favicon/android-chrome-192x192.png",
@@ -8,8 +8,8 @@
             "type": "image/png"
         },
         {
-            "src": "/assets/favicon/android-chrome-256x256.png",
-            "sizes": "256x256",
+            "src": "/assets/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
