@@ -1,13 +1,19 @@
 .hero {
     background-color: $primary-color;
+    background-image: url("~/src/assets/images/background-blocks.svg");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
 
     h1 {
         font-weight: normal;
-        font-size: 1em;
+        font-size: 1.25em;
+        line-height: 1.5;
     }
 
     .logo {
-        max-width: 250px;
+        max-width: 400px;
+        margin-bottom: 1.3rem;
     }
 
     &__github {
@@ -20,6 +26,7 @@
             height: 1em;
             margin-right: 0.4em;
             transition: fill 200ms;
+            fill: $bg-color;
         }
 
         &:hover {
