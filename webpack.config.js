@@ -7,7 +7,7 @@ module.exports = () => {
     return {
         devServer: {
             static: {
-            directory: path.join(__dirname, 'public'),
+                directory: path.join(__dirname, 'public'),
             },
             compress: true,
             port: 9000,
@@ -44,7 +44,7 @@ module.exports = () => {
                         {
                             loader: "sass-loader",
                             options: {
-                            implementation: require.resolve("sass"),
+                                implementation: require.resolve("sass"),
                             },
                         },
                     ]
